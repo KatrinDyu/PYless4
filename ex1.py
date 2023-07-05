@@ -4,6 +4,8 @@
 #m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
 
 from random import randint
+
+
 n = int(input())
 m = int(input())
 arr_n = []   #рандомно вывели список
@@ -24,5 +26,5 @@ print(my_set_n)
 print(my_set_m)
 
 
-cross = my_set_n.intersection(my_set_m)
+cross = sorted(my_set_n.intersection(my_set_m))
 print(cross)
